@@ -3,11 +3,12 @@ import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import image from './rawImage.jpg'
 import image2 from './img2.webp'
 import image3 from './img3.webp'
+import Chefs from '../pages/Home/Home/Chefs';
 
 const Banner = () => {
     return (
         <Container >
-            <Carousel className='ms-5 p-5' >
+            <Carousel className='mx-2 p-5' >
       <Carousel.Item>
         <img
           className="d-block w-100 rounded"
@@ -41,8 +42,10 @@ const Banner = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    <Chefs></Chefs>
         </Container>
     );
 };
 
 export default Banner;
+
