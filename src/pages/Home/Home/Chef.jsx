@@ -5,10 +5,12 @@ import Row from 'react-bootstrap/Row';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import ViewRecipes from './ViewRecipes';
 
 
 const Chef = (props) => {
-    console.log(props.chef);
+    // console.log(props.chef);
     const {name,id,likes,picture,numberOfRecipes,yearsOfExperience}=props.chef;
     
     return (
@@ -26,7 +28,8 @@ const Chef = (props) => {
               </Card.Text>
               <Card.Text  className='d-flex justify-content-between'>
                 <h5>{yearsOfExperience} Years Experience</h5>
-                <Button variant="dark" className="text-center">View Details</Button>
+                
+                    <Link to={`/view-recipes/`}><Button onClick={ViewRecipes} variant="dark" className="text-center">View Recipes</Button></Link> 
               </Card.Text>
             </Card.Body>
           </Card>

@@ -15,7 +15,7 @@ const Header = () => {
             <Link to='/contact'><Button  variant="dark"> Contact</Button></Link>
             
           </Nav>
-          <Nav className='ms-5'>
+          <Nav className=''>
           <Link to='/login'><Button variant="dark" >Login</Button> </Link> 
           <Link to='/register'><Button variant="dark" >Register</Button> </Link> 
             
