@@ -12,6 +12,7 @@ import App from './App';
 import Banner from './Banner/Banner';
 import Login from './pages/Home/Home/Login';
 import ViewRecipes from './pages/Home/Home/ViewRecipes';
+import Register from './pages/Home/Home/Register';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path:'/login',
         element:<Login></Login>
+      },
+      {
+        path:'/register',
+        element: <Register></Register>
       },
       {
         path:`view-recipes`,
