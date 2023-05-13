@@ -14,7 +14,7 @@ const ViewRecipe = ({viewRecipe}) => {
       <Card className='m-3 text-center'>
         <Card.Img className='w-75 rounded mx-auto mt-3 d-block' variant="top" src={viewRecipe.recipes[0].photo} />
         <Card.Body>
-          <Card.Title>{viewRecipe.recipes[0].name}</Card.Title>
+          <Card.Title className='fw-bold'>{viewRecipe.recipes[0].name}</Card.Title>
           <Card.Text>
             <small className='fw-light'><span className='fw-semibold'>Ingredients: </span> {viewRecipe.recipes[0].ingredients[0]}, {viewRecipe.recipes[0].ingredients[1]},
             {viewRecipe.recipes[0].ingredients[2]},
@@ -26,14 +26,12 @@ const ViewRecipe = ({viewRecipe}) => {
           </Card.Text>
          
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
+       
       </Card>
       <Card  className='m-3 text-center'>
         <Card.Img className='w-75 rounded mx-auto mt-3 d-block' variant="top" src={viewRecipe.recipes[1].photo} />
         <Card.Body>
-          <Card.Title>{viewRecipe.recipes[1].name}</Card.Title>
+          <Card.Title className='fw-bold'>{viewRecipe.recipes[1].name}</Card.Title>
           <Card.Text>
             <small className='fw-light'><span className='fw-semibold'>Ingredients: </span>{viewRecipe.recipes[1].ingredients[0]}, {viewRecipe.recipes[1].ingredients[1]},
              {viewRecipe.recipes[1].ingredients[2]},
@@ -44,14 +42,12 @@ const ViewRecipe = ({viewRecipe}) => {
           </Card.Text>
           
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
+
       </Card>
       <Card  className='m-3 text-center'>
         <Card.Img className='w-75 rounded mx-auto mt-3 d-block' variant="top" src={viewRecipe.recipes[2].photo} />
         <Card.Body>
-          <Card.Title>{viewRecipe.recipes[2].name}</Card.Title>
+          <Card.Title className='fw-bold'>{viewRecipe.recipes[2].name}</Card.Title>
           <Card.Text>
             <small className='fw-light'><span className='fw-semibold'>Ingredients: </span> {viewRecipe.recipes[2].ingredients[0]}, {viewRecipe.recipes[2].ingredients[1]},
              {viewRecipe.recipes[2].ingredients[2]},
@@ -62,9 +58,6 @@ const ViewRecipe = ({viewRecipe}) => {
           </Card.Text>
          
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
       </Card>
     </CardGroup>
       
