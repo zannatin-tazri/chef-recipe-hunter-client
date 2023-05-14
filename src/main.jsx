@@ -13,6 +13,7 @@ import Banner from './Banner/Banner';
 import Login from './pages/Home/Home/Login';
 import ViewRecipes from './pages/Home/Home/ViewRecipes';
 import Register from './pages/Home/Home/Register';
+import AuthProvider from './pages/Home/Home/providers/AuthProvider';
 
 const router = createBrowserRouter([
   {
@@ -49,7 +50,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
     <RouterProvider router={router}></RouterProvider>
+    </AuthProvider>
   </React.StrictMode>,
 )
 export default router;
