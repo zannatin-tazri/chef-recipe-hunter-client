@@ -4,8 +4,35 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from './providers/AuthProvider';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import app from '../../../firebase/firebase.config';
 
 const Login = () => {
+  const auth=getAuth(app);
+  const provider=new GoogleAuthProvider();
+  const handleGoogleSignIn=()=>{
+    signInWithPopup(auth, provider)
+    .then(result=>{
+      const user_= result.user;
+
+    })
+    .catch(error=>{
+      console.log('error', error.message)
+    })
+  }
+
+  const handleGitHubSignIn=()=>{
+    signInWithPopup(auth, provider)
+    .then(result=>{
+      const user__= result.user;
+
+    })
+    .catch(error=>{
+      console.log('error', error.message)
+    })
+  }
+
+
   const {login}=useContext(AuthContext);
 
   const navigate=useNavigate();
@@ -49,8 +76,14 @@ const Login = () => {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Accept Terms and Condition" />
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
+      <Button variant="dark" type="submit">
+        Login
+      </Button> <br />
+      <Button onClick={handleGoogleSignIn} className='mt-5 mb-5' variant="dark" type="submit">
+        Login With Google
+      </Button>
+      <Button onClick={handleGitHubSignIn} className='mt-5 ms-5 mb-5' variant="dark" type="submit">
+        Login With Github
       </Button>
     </Form>
     <small>New to Dim Sum Dynasty? <Link to='/register'>Register</Link></small>

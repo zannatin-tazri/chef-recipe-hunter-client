@@ -29,7 +29,7 @@ const Header = () => {
           <Nav className=''>
           <Link to='/login'><Button variant="dark" >Login</Button> </Link> 
           <Link to='/register'><Button variant="dark" >Register</Button> </Link> 
-          {user && <span className='text-primary'>Welcome {user.email}<Button variant="dark" onClick={handleLogout}>Logout</Button></span>}
+          {user && <span className='text-secondary'><img className='h-75 w-25 rounded-5' src={user.photoURL} alt="" /><Button variant="dark" onClick={handleLogout}>Logout</Button></span>}
 
             
           </Nav>
