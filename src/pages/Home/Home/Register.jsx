@@ -64,13 +64,6 @@ const Register = () => {
       <Button variant="dark" type="submit" value='Register'>
         Register
       </Button>
-      <br />
-      <Button className='mt-5 ' variant="dark" type="submit" value='Register'>
-        Register With Google
-      </Button>
-      <Button className='mt-5 ms-5' variant="dark" type="submit" value='Register'>
-        Register With Github
-      </Button> <br /> <br />
     </Form>
     <small>Already have an account? <Link to='/login'>Login</Link></small>
     <p className='text-danger'>{error}</p>
