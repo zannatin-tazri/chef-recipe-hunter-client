@@ -14,6 +14,7 @@ import Login from './pages/Home/Home/Login';
 import ViewRecipes from './pages/Home/Home/ViewRecipes';
 import Register from './pages/Home/Home/Register';
 import AuthProvider from './pages/Home/Home/providers/AuthProvider';
+import PrivateRoute from './pages/Home/Home/routes/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path:`view-recipes`,
-        element: <ViewRecipes></ViewRecipes>,
+        element: <PrivateRoute><ViewRecipes></ViewRecipes></PrivateRoute>,
         // loader: ({params})=>fetch(`/http://localhost:5000/recipeDetails/${params.recipeId}`)
       }
       
