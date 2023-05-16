@@ -6,6 +6,7 @@ const Footer = () => {
     return (
         <div className='p-5 bg-dark mt-5 px-5 text-secondary text-center'>
            <div className=''>
+            <h2>About Us</h2>
            <p className='text-break'>Dim Sum Dynasty restaurant chefs include the Head Chef or Executive Chef, 
                 Dim Sum Chef, and Wok Chef. The Head Chef oversees the kitchen, while Dim 
                 Sum Chefs specialize in small, bite-sized dishes, and Wok Chefs excel in high-heat

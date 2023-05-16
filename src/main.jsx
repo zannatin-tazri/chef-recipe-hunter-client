@@ -16,6 +16,7 @@ import Register from './pages/Home/Home/Register';
 import AuthProvider from './pages/Home/Home/providers/AuthProvider';
 import PrivateRoute from './pages/Home/Home/routes/PrivateRoute';
 import Contact from './pages/Home/Home/Contact';
+import ErrorPage from './pages/Home/Home/error/ErrorPage';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path:'/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/*',
+        element: <ErrorPage></ErrorPage>
       }
       
     ]
