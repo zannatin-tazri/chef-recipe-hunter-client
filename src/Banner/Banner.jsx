@@ -9,7 +9,7 @@ import FAQ from '../pages/Home/Home/Faq/FAQ';
 const Banner = () => {
     return (
         <Container >
-            <Carousel className='mx-2 p-5' >
+            <Carousel className='mx-2 p-5 mt-5' >
       <Carousel.Item>
         <img
           className="d-block w-100 rounded"

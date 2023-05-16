@@ -15,7 +15,8 @@ const Footer = () => {
 </p>
             <h2>Links</h2> 
             <Link  to='/'><Button className='text-secondary' variant="dark" >Home</Button></Link>
-            <Link className='text-secondary'> <Button className='text-secondary' variant="dark" >About</Button></Link> 
+            <Link className='text-secondary' to='/register'> <Button className='text-secondary' variant="dark" >Register</Button></Link> 
+            <Link className='text-secondary' to='/login'><Button className='text-secondary' variant="dark" >Login</Button></Link>
             <Link className='text-secondary' to='/blog'><Button className='text-secondary' variant="dark" >Blog</Button></Link>
 
             <h2 >Contact Now</h2>

@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 const Blog = () => {
     return (
-        <Container className='m-5'>
+        <Container className='m-5 p-5'>
             <h1>Difference between controlled and uncontrolled components</h1>
             <p><b>Controlled Components:</b> 
 A controlled component is a form element whose value is controlled by the application's state. In other words, the state of the component is tied to the value of an associated state variable. When the user 
