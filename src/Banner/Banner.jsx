@@ -4,6 +4,7 @@ import image from './rawImage.jpg'
 import image2 from './img2.webp'
 import image3 from './img3.webp'
 import Chefs from '../pages/Home/Home/Chefs';
+import FAQ from '../pages/Home/Home/Faq/FAQ';
 
 const Banner = () => {
     return (
@@ -43,6 +44,7 @@ const Banner = () => {
       </Carousel.Item>
     </Carousel>
     <Chefs></Chefs>
+    <FAQ></FAQ>
         </Container>
     );
 };
